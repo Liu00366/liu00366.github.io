@@ -63,7 +63,14 @@ nav a{
 
 /* Child selector or Direct Child selector */
 article>p {
+    /* thickness style color */
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: center;
+    word-spacing: 3px;
+    font-style: oblique;
 }
 
 /* Adjacent sibling selector */
