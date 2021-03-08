@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,37 +136,38 @@ table {
 
 /***************************** css begining *****************************/
 
-.container{
-    max-width: 70%;
-    margin:0 auto;
+.container {
+	max-width: 80%;
+	margin: 0 auto;
 	background-color: #aad4cf;
 }
-body{
-	font-size:1rem;
+
+body {
+	font-size: 1.3rem;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: auto;
-    padding: 0;
+	padding: 0;
 	background-color: cadetblue;
 	display: flex;
 	flex-direction: column;
 }
 
-header{
+header {
 	font-size: 2rem;
 	color: ivory;
 	text-align: center;
 	background: url("../image/lone-starfish-wide.jpg") center no-repeat;
 	background-size: cover;
-    margin: 0px;
-    padding: 10% 1em 1em 1em;
+	margin: 0px;
+	padding: 10% 1em 1em 1em;
 }
 
-a:link{
+a:link {
 	text-decoration: none;
 	color: black;
 }
 
-.hsc ul li{
+.hsc ul li {
 	display: inline-block;
 	width: 33%;
 	padding: 1% 12% 1% 12%;
@@ -87,7 +175,7 @@ a:link{
 	border-right: black solid;
 }
 
-.hsc ul li:last-child{
+.hsc ul li:last-child {
 	border-right: 0em;
 }
 
@@ -96,11 +184,15 @@ p {
 	padding: 0.5rem 1rem 1rem 0.5rem;
 }
 
-h2,h3,h4{
-	font-size: 1.5rem ;
-	font:bold;
+h2,
+h3,
+h4 {
+	font-size: 1.5rem;
+	font: bold;
 	padding-left: 0.5rem;
+	margin: 0.8rem;
 }
+
 .squire {
 	float: left;
 	width: 200px;
@@ -109,25 +201,35 @@ h2,h3,h4{
 	padding: 0.5rem;
 }
 
-.second ul li{
-	margin: 5%;
+.second ul li {
+	font-size: 1rem;
+	list-style: disc;
+	margin: 0 0 0 5%;
 	width: 90%;
-	font: 1.5em;
 }
 
 .form {
+	border-style: solid;
+	border-width: 1px 2px 1px 2px;
+	border-color: black;
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+h5 {
 	padding: 0.5rem;
 }
 
-input {
+.form input {
 	width: 98.5%;
 }
-textarea{
+
+textarea {
 	width: 98.6%;
-	height: 100px;
+	height: 80px;
 }
 
-footer{
+footer {
 	text-align: right;
-	font: 0.6em sans-serif;
+	font: 1em sans-serif;
 }
