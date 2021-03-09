@@ -153,8 +153,8 @@ body {
 }
 
 header {
-	font-size: 2rem;
-	color: ivory;
+	font-size: 3rem;
+	color:white;
 	text-align: center;
 	background: url("../image/lone-starfish-wide.jpg") center no-repeat;
 	background-size: cover;
@@ -162,9 +162,11 @@ header {
 	padding: 10% 1em 1em 1em;
 }
 
-a:link {
+a:link,
+a:visited {
 	text-decoration: none;
 	color: black;
+	font-weight: bold;
 }
 
 .hsc ul li {
@@ -180,17 +182,18 @@ a:link {
 }
 
 p {
-	font: 0.8em sans-serif;
+	font: 1.2rem;
 	padding: 0.5rem 1rem 1rem 0.5rem;
 }
 
 h2,
 h3,
 h4 {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
+	font-weight: bold;
 	font: bold;
-	padding-left: 0.5rem;
-	margin: 0.8rem;
+	padding-left: 0.3rem;
+	margin: 1rem;
 }
 
 .squire {
@@ -202,7 +205,7 @@ h4 {
 }
 
 .second ul li {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	list-style: disc;
 	margin: 0 0 0 5%;
 	width: 90%;
@@ -210,26 +213,37 @@ h4 {
 
 .form {
 	border-style: solid;
-	border-width: 1px 2px 1px 2px;
-	border-color: black;
-	padding: 0.5rem;
-	margin: 0.5rem;
+	border-width: 1px 2px 1px 1px;
+	/* border-color: black; */
+	padding: 0.8rem;
+	margin: 1rem;
 }
 
 h5 {
-	padding: 0.5rem;
+	padding: 0.5em 0.5em 0.8rem 0rem;
 }
 
-.form input {
+/* .form input {
 	width: 98.5%;
+} */
+.name, .email{
+	width: 98.6%;
+	margin: 0.2em 0.5em 0.3em 0rem;
 }
-
-textarea {
+.message {
 	width: 98.6%;
 	height: 80px;
+	margin: 0.2em 0.5em 0.3em 0rem;
+}
+
+button {
+	margin: 1rem 1rem 1rem 0rem;
+	padding: 0.5em;
+	text-align: center;
 }
 
 footer {
 	text-align: right;
 	font: 1em sans-serif;
+	margin-right: 1em;
 }
