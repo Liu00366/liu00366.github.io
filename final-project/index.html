@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>welcome - Home</title>
+    <title>Final Project - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/37c2d6c70f.js" crossorigin="anonymous"></script>
 </head>
@@ -16,27 +16,43 @@
     <header class="site-header">
 
         <div>
+            <!-- image of the header -->
+            <img src="image/logo.png" alt="logo">
+
             <div>
                 <!-- the navigation -->
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Team</li>
-                        <li>Contact</li>
+                        <li>
+                            <a href="#home" class="welcom">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutus" class="aboutus">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#team" class="team">Team</a>
+                        </li>
+                        <li>
+                            <a href="#connectus" class="connectus">Contact</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Search</a>
+                        </li>
                     </ul>
+                </nav>
                     <!-- search -->
-                    <div>
-                        <label for="search"></label>
-                        <input class="first_search" type="text" id="search" name="search" placeholder="Search">
-                        <a class="btn_search" href=""><i class="fas fa-search"></i></a>
-                    </div>
+                <div>
+                    <label for="search"></label>
+                    <input class="first_search" type="text" id="search" name="search" placeholder="Search">
+                    <a class="btn_search" href=""><i class="fas fa-search"></i></a>
+                </div>
+
             </div>
 
-            <div>
-                <!-- image of the header -->
-                <img src="image/logo.png" alt="logo">
+            <div class="welcom">
                 <article>
                     <h1>Welcome to Three Star Media</h1>
                     <img src="image/main-banner.jpg" alt="main-banner" class="main-heading">
@@ -54,7 +70,7 @@
     <!-- main content -->
     <main>
         <!-- About Us section -->
-        <div class="about_us">
+        <div class="aboutus">
             <article>
                 <h2>About Us</h2>
                 <img src="image/about-us.jpg" alt="about-us" class="about-us">
@@ -67,37 +83,39 @@
         </div>
 
         <!-- Our Services section -->
-        <div>
+        <div class="services">
             <div>
-                <h3>Our Services</h3>
+                <h2>Our Services</h2>
             </div>
 
             <div>
                 <article>
-                    <h4>Digital Transformation</h4>
+                    <h3>Digital Transformation</h3>
                     <img src="image/digital.jpg" alt="digital" class="digital">
                     <p>
                         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                         catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                         batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
                     </p>
+                    <a class="btn_digital" href="">Digital Plans <i class="fas fa-caret-right"></i></a>
                 </article>
             </div>
             <div>
                 <article>
-                    <h4>Marketing</h4>
+                    <h3>Marketing</h3>
                     <img src="image/marketing.jpg" alt="marketing" class="marketing">
                     <p>
                         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                         catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                         batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
                     </p>
+                    <a class="btn_marketing" href="">Video Plans <i class="fas fa-caret-right"></i></a>
                 </article>
             </div>
 
             <div>
                 <article>
-                    <h4>Video Production</h4>
+                    <h3>Video Production</h3>
                     <img src="image/video.jpg" alt="video" class="video">
                     <p>
                         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
@@ -110,80 +128,86 @@
 
             <div>
                 <article>
-                    <h4>Web Development</h4>
+                    <h3>Web Development</h3>
                     <img src="image/web.jpg" alt="web" class="web">
                     <p>
                         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                         catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                         batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
                     </p>
-                    <a class="btn_video" href="">Web Plans <i class="fas fa-caret-right"></i></a>
+                    <a class="btn_web" href="">Web Plans <i class="fas fa-caret-right"></i></a>
                 </article>
             </div>
 
             <div>
                 <article>
-                    <h4>Print</h4>
+                    <h3>Print</h3>
                     <img src="image/print.jpg" alt="print" class="print">
                     <p>
                         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                         catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                         batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
                     </p>
-                    <a class="btn_video" href="">Print Plans<i class="fas fa-caret-right"></i></a>
+                    <a class="btn_print" href="">Print Plans<i class="fas fa-caret-right"></i></a>
                 </article>
             </div>
         </div>
 
         <!-- Our Vision Section -->
-        <div>
+        <div class="vision">
             <article>
-                <h4>Our Vision</h4>
+                <h3>Our Vision</h3>
                 <img src="image/vision.jpg" alt="vision" class="vision">
                 <p>
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                     catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                     batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
                 </p>
-                <a class="btn_video" href="">Learn More<i class="fas fa-caret-right"></i></a>
+                <a class="btn_vision" href="">Learn More<i class="fas fa-caret-right"></i></a>
             </article>
         </div>
 
         <!-- Our Team Section -->
-        <div>
-            <h3>Our Team</h3>
-        </div>
+        <div class="team">
 
-        <div>
-            <article>
-                <h4>John Doe</h4>
-                <h5>CEO and Co-owner</h5>
-                <img src="image/john.jpg" alt="jone" class="jone">
-                <p>
-                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
-                    catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
-                    batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
-                </p>
-            </article>
-        </div>
+            <h2>Our Team</h2>
 
-        <div>
-            <article>
-                <h4>Bob Rite</h4>
-                <h5>CFO and Co-owner</h5>
-                <img src="image/bob.jpg" alt="bob" class="bob">
-                <p>
-                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
-                    catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
-                    batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
-                </p>
-            </article>
+            <img src="image/john.jpg" alt="jone" class="jone">
+
+            <div>
+                <article>
+                    <h4>John Doe</h4>
+                    <h5>CEO and Co-owner</h5>
+                    
+                    <p>
+                        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
+                        catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
+                        batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
+                    </p>
+                </article>
+            </div>
+
+            <div>
+                <article>
+                    <h4>Bob Rite</h4>
+                    <h5>CFO and Co-owner</h5>
+
+                    <p>
+                        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
+                        catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
+                        batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue;
+                    </p>
+                </article>
+            </div>
+
+            <img src="image/bob.jpg" alt="bob" class="bob">
+            
         </div>
 
         <!-- Contact Us section -->
-        <div>
-            <h3>Contact Us</h3>
-        </div>
+        <div class="contactus">
+            <h2>Contact Us</h2>
+        
 
         <div>
             <h4>Send us a message</h4>
@@ -230,6 +254,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </main>
 
     <!-- Footer -->
