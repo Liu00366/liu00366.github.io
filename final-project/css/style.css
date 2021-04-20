@@ -199,7 +199,6 @@ img {
 table {
     width: 100%;
 }
-
 td,
 th {
     border: 1px solid black;
@@ -312,7 +311,7 @@ caption {
     color: white;
     background-color: rgba(0, 0, 0, 0.562);
     margin: 5%;
-    padding: 5% 2%;
+    padding: 5% 2% 5% 2%;
 }
 
 /* About Us section */
@@ -393,7 +392,6 @@ caption {
 /* Team Section */
 .team {
     padding: 1rem white;
-    margin: 0.5rem;
 }
 
 .john,
@@ -402,7 +400,7 @@ caption {
 }
 
 .team p {
-
+    margin: 0.5rem;
     border-bottom: peachpuff 1.5rem solid;
 }
 
@@ -446,11 +444,12 @@ caption {
 .hours .table {
     width: 90%;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 /* Google Map */
 .location iframe {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
     width: 100%;
 }
 
@@ -473,7 +472,7 @@ footer a:hover {
 /* ********** Desktop View ********** */
 @media screen and (min-width: 760px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     body {
@@ -485,23 +484,61 @@ footer a:hover {
         text-align: center;
     }
 
-    .main-nav {
-        width: 90%;
-        align-items: center;
-        padding-top: 1rem;
-    }
-
+    /* Navigation */
     .logo {
         padding-right: 5rem;
-        size: 15%;
     }
-
+    .logoimg {
+        padding-right: 0;
+        width: 10%;
+        margin: 1% 2% 1% 10%;
+    }
+    .main-nav {
+            width: 90%;
+            align-items: center;
+        }
     .list {
         display: flex;
     }
 
     .list li {
-        flex: 1;
+        margin-top: 5%;
+        flex:20%;
+    }
+
+    .list a {
+        text-decoration: none;
+        display: block;
+        color: rgb(197, 145, 32);
+        padding: 1rem;
+    }
+
+    .list a:hover {
+        background-color: rgb(197, 145, 32);
+        color: black;
+    } 
+
+    .list .search_box {
+        display: flex;
+        align-items: center;
+    }
+
+    .list .search {
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    } 
+
+    .list i {
+        border: 1px solid rgb(197, 145, 32);
+        color: rgb(197, 145, 32);
+        font-size: 2rem;
+        padding: 6px;
+    }
+
+    .welcome {
+        height: 500px;
     }
 
 
