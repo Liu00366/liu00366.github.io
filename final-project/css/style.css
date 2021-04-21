@@ -136,7 +136,7 @@ table {
 
 /***************************** css begining *****************************/
 html {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     box-sizing: border-box;
 }
@@ -303,7 +303,7 @@ caption {
 .welcome {
     background-image: url("../image/main-banner.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover;
     height: 650px;
     margin-top: 60px;
 }
@@ -384,6 +384,7 @@ caption {
 
 .btn_v {
     text-decoration: none;
+    color: white;
     background-color: rgba(10, 10, 34, 0.493);
     border: #c78c06 solid 1px;
     line-height: 5rem;
@@ -497,7 +498,7 @@ footer a:hover {
     .main-nav {
             width: 90%;
             align-items: center;
-        }
+    }
     .list {
         display: flex;
     }
