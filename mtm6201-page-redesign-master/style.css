@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***************************** css begining *****************************/
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-size: 0.6rem;
+} 
+
+
+body #nav {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    background-color:#DD6E42;
+    box-sizing: border-box;
+}
+
+
+body .nav .nav-link{
+    color:snow;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+body .nav a:hover {
+    background-color:#E8DAB2;
+    color: #222;
+    width: 100%;
+}
+
+#main .home{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin: 0px auto;
+    padding: 2.5rme;
+    background-color:#4F6D7A;
+    color: snow;
+    padding: 1rem;
+  }
+
+section .page-title,
+section .section-title {
+    width: 100%;
+    margin: 0.3rem;
+}
+
+.main #about {
+    
+    padding: 2rem;
+    background-color:#B56576;
+    
+  }
+
+.main .about {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 1.5rem; */
+    color: snow;
+}
+
+.about .about-image {
+    float: left;
+  
+    width: 20%;
+  }
+
+#main .contact {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 1.5rem; */
+    background-color:#708d81;
+    color: snow;
+    padding: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.contact .contact-form {
+    text-align: center;
+    background-color:#E8DAB2;
+    color: #222;
+    margin: 0.5rem;
+    padding: 0.6rem;
+    width: 95%;
+}
+
+.contact-form-section .contact-form-input  {
+    padding: 0.5rem;
+    width: 90%;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    width: 90%;
+}
+
+/* ********** Desktop View ********** */
+@media screen and (min-width: 560px) {
+    html {
+        font-size: 1rem;
+    }
+}
