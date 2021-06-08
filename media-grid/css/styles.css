@@ -1,0 +1,14 @@
+
+
+@media (min-width:800px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+}
