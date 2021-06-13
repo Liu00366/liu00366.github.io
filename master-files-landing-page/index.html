@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="box header">
+
+    <div class="logo">
+      <img 
+      src="images/logo/logo.svg" 
+      alt="logo"
+      srcset="images/logo/logo.svg 320w,
+              images/logo/logo.svg 480w,
+              images/logo/logo.svg 720w,
+              images/logo/logo.svg 960w"
+      sizes="(min-width: 960px) 50vw, 100vw"
+      >
+    </div>
+
+    <div class="box main">
+      <h1>Want to be your own boss</h1>
+      <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="box bgimage">
+      <img src="images/bg-image/scooter.svg" alt="bg-image">
+    </div>
+
+    <div class="box table">
+      <form class="table-input" action="apply.html" method="get">
+        <div class="boxt name">
+        <h2>Apply Now</h2>
+        </div>
+        <div class="boxt describe">
+          <h3>Enter your info below</h3>
+        </div>
+        <div class="boxt first-name">
+          <label for="first-name"></label>
+          <input type="text" id="first-name" name="first-name" placeholder="First name">
+        </div>
+        <div class="boxt last-name">
+          <label for="last-name"></label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last name">
+        </div>
+        <div class="boxt email">
+          <label for="email"></label>
+          <input type="email" id="email-add" name="email-add" placeholder="Email address">
+        </div>
+        <div class="boxt phone-no">
+          <label for="phone-no"></label>
+          <input type="number" id="phone-no" name="phone-no" placeholder="Phone number">
+        </div>
+        <div class="boxt agree">
+          <input type="checkbox" name="agree" id="agree">
+          <label for="agree">I agree to dash terms</label>
+        </div>
+        <div class="boxt submit">
+          <button type="submit">DRIVE WITH US</button>
+        </div>
+        <div class="boxt p">
+          <p>Already applied?</p>
+        </div>
+        <div class="boxt application">
+          <a href="aplication.html">Check your application status here</a>
+        </div>
+      </form>        
+    </div>
+  </main> 
+  
+  <footer>
+    <h4>See how much you earn with Dash.</h4>
+    <p>how many hours do you want to drive with us this week?</p>
+    <form class="box contactform">
+        <div class="boxf hours">
+            <input type="text" id="input-hours" placeholder="Hours">
+        </div>
+
+        <div class="boxf city">
+            <input type="text" id="input-city" placeholder="City">
+        </div>
+
+        <div class="boxf calculate">
+            <button type="calculate">CALCULATE</button>
+        </div>
+    </form>
+  
+    <div class="boxf icons">
+        <img src="images/icons/facebook.svg"/>
+        <img src="images/icons/instagram.svg"/>
+        <img src="images/icons/twitter.svg"/>
+        <img src="images/icons/linkedin.svg"/>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
