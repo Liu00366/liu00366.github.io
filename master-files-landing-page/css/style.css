@@ -185,12 +185,6 @@ a {
   margin: 2% 5% 2% 5%;
 }
 
-/* Set font size in class .container .block p */
-.container .block p {
-  /* 1.5rem = 24px */
-  font: 1.5em;
-}
-
 /* h1 layout setting */
 h1 {
   /* Specifies the width of the h1 area */
@@ -224,18 +218,20 @@ h4 {
 }
 
 /* class .container .block p element layout */
-.container .block p {
+.container p {
   /* thickness of the margin area: top, right, down, left */
   margin: 2% 5% 2% 5%;
+  /* 1.5rem = 24px */
+  font: 1.5em;
 }
 
 /* class .container .block img element layout */
-.container .block img {
+.container img {
   margin: 2% 5% 2% 5%;
 }
 
 /* class .container .block .table-input layout */
-.container .block .table-input {
+.container .table-input {
   margin: 2% 5% 2% 5%;
   background: #FFFFFF;
   /* Defines the radii of the outer border edge. */
@@ -426,50 +422,50 @@ footer button {
   }
 
   /* container container */
-  .container {
+  .main {
     width: 100%;
+    justify-content: center;
     /* start using the grid model */
     display: grid;
-    /* flex items will wrap onto multiple lines, from top to bottom. */
-    flex-wrap: wrap;
-    /* define a pattern have 12 columns*/
-    grid-template-columns: repeat(12, 1fr);
-    /* define a pattern have 8 rows*/
+    /* define a pattern have 10 columns*/
+    grid-template-columns: repeat(10, 1fr);
+    /* define a pattern have 5 rows*/
     grid-template-rows: repeat(5, 1fr);
     margin: 2%;
   }
 
   /* Select the 1st list item */
-  .container .block:nth-child(1) {
-    /* Place a grid item at column line 1, and let it end on column line 2 */
-    grid-column: 1/2;
-    /* Place a grid item at row line 1, and let it end on row line 2 */
-    grid-row: 1/2;
+  .main .container:nth-child(1) {
+    /* Place a grid item at column 1, and span 1 column */
+    grid-column: 1/ span 1;
+    /* Place a grid item at row 1, and span 1 row */
+    grid-row: 1 /span 1;
   }
 
   /* Select the 2ed list item */
-  .container .block:nth-child(2) {
-    /* Place a grid item at column line 1, and let it end on column line 2 */
-    grid-column: 1 / 2;
-    grid-row: 2 /3;
+  .main .container:nth-child(2) {
+    /* Place a grid item at column 1, and span 4 columns */
+    grid-column: 1 / span 4;
+    /* Place a grid item at row 2, and span 3 row */
+    grid-row: 2 / span 3;
   }
 
   /* Select the 3th list item */
-  .container .block:nth-child(3) {
-    grid-column: 1 / 2;
-    grid-row: 3 /4;
+  .main .container:nth-child(3) {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
   }
 
   /* Select the 4th list item */
-  .container .block:nth-child(4) {
-    grid-column: 2/ 3;
-    grid-row: 2 / 4;
+  .main .container:nth-child(4) {
+    grid-column: 4/ span 5;
+    grid-row: 2 / span 4;
   }
 
   /* Select the 5th list item */
-  .container .block:nth-child(5) {
-    grid-column: 3 /4;
-    grid-row: 3 / 4;
+  .main .container:nth-child(5) {
+    grid-column: 8 / span 3;
+    grid-row: 2 / span 4;
   }
 
   /* footerbox container */
