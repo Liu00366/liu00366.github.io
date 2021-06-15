@@ -288,12 +288,13 @@ footer button {
 }
 
 /* chackbox and "I agree to dash terms" inline  */
-.checkbox{
+.checkbox {
   display: inline;
   width: fit-content;
   float: left;
   margin: 0.3rem 0.3rem 0.7rem 0.2rem;
 }
+
 .agreebox {
   margin: 1.5rem 1rem 1.5rem 0.2rem;
 }
