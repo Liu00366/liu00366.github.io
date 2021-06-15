@@ -146,9 +146,9 @@ table {
   src: url(fonts/Montserrat-Bold.ttf);
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 /* set the fount family and size for the web page*/
 html,
@@ -271,8 +271,8 @@ input {
 footer {
   background-color: #FFFD8C;
   /* setting border width */
-  border: 1.125rem;
-  padding: 1rem;
+  border: 0rem;
+  padding: 1.5rem 5%;
 }
 
 /* set font size for the p element in footer */
@@ -287,10 +287,12 @@ footer button {
   padding: 0.2rem;
 }
 
-.boxt checkbox {
-  width: 50px;
+/* .boxt checkbox {
+  display:flex;
+  width: 1rem;
   text-align: left;
-}
+} */
+
 /* I use the code want the class ".boxt .check" and ".boxt .agree" in same line, but not work */
 .boxt {
   display: inline;
@@ -366,22 +368,15 @@ footer button {
 
   /* button in footer */
   footer button {
-    /* cancel padding and border */
-    padding: 0;
+    /* cancel border */
     border: 0;
   }
 
   /* input in footer */
-  footer input {
-    /* edit padding and border */
-    padding: 0.5rem;
-    border: 0.5rem;
-  }
+  footer input {}
 
   /* hc container*/
   .hc {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
     /* start using the Flexbox model */
     display: flex;
     /* flex items will wrap onto multiple lines, from top to bottom. */
@@ -411,6 +406,10 @@ footer button {
     justify-content: center;
     align-items: center;
     /* margin: 0.4rem 2rem 0rem 2rem; */
+  }
+
+  .footer {
+    padding: 10%;
   }
 
 }
@@ -448,9 +447,9 @@ footer button {
   /* Select the 2ed list item */
   .main .container:nth-child(2) {
     /* Place a grid item at column 1, and span 4 columns */
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     /* Place a grid item at row 2, and span 3 row */
-    grid-row: 2 / span 3;
+    grid-row: 2 / span 2;
   }
 
   /* Select the 3th list item */
@@ -479,7 +478,7 @@ footer button {
     grid-template-columns: 40% 30% 20%;
     /* define a pattern have 3 rows*/
     grid-template-rows: repeat(3, 2rem);
-    margin: 2% 3% 0% 3%;
+    margin: 1% 2% 0% 2%;
   }
 
   /* Select the 1st list item */
@@ -535,6 +534,11 @@ footer button {
   /* Select the 3th list item */
   .hc .hours:nth-child(3) {
     flex-basis: 28%;
+  }
+
+  /* add margin for social platform icons */
+  .boxfooter {
+    margin: 1.5rem;
   }
 
 }
