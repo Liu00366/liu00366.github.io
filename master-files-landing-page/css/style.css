@@ -287,15 +287,15 @@ footer button {
   padding: 0.2rem;
 }
 
-/* .boxt checkbox {
-  display:flex;
-  width: 1rem;
-  text-align: left;
-} */
-
-/* I use the code want the class ".boxt .check" and ".boxt .agree" in same line, but not work */
-.boxt {
+/* chackbox and "I agree to dash terms" inline  */
+.checkbox{
   display: inline;
+  width: fit-content;
+  float: left;
+  margin: 0.3rem 0.3rem 0.7rem 0.2rem;
+}
+.agreebox {
+  margin: 1.5rem 1rem 1.5rem 0.2rem;
 }
 
 /* 4 Social Platform Icons */
@@ -408,10 +408,6 @@ footer button {
     /* margin: 0.4rem 2rem 0rem 2rem; */
   }
 
-  .footer {
-    padding: 10%;
-  }
-
 }
 
 /* ********** Desktop View ********** */
@@ -478,7 +474,6 @@ footer button {
     grid-template-columns: 40% 30% 20%;
     /* define a pattern have 3 rows*/
     grid-template-rows: repeat(3, 2rem);
-    margin: 1% 2% 0% 2%;
   }
 
   /* Select the 1st list item */
