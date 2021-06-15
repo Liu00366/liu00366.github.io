@@ -146,6 +146,10 @@ table {
   src: url(fonts/Montserrat-Bold.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* set the fount family and size for the web page*/
 html,
 body {
@@ -167,10 +171,10 @@ button {
   /* Defines the radii of the outer border edge. */
   border-radius: 11px;
   text-align: center;
-  width: 100%;
   border: none;
   background-color: #57EEAB;
   padding: 0.5rem;
+  width: 100%;
 }
 
 /* Set the href link layout in the page */
@@ -269,9 +273,6 @@ footer {
   /* setting border width */
   border: 1.125rem;
   padding: 1rem;
-  /* thickness of the margin area: top, right, down, left */
-  margin: 1rem 0 1rem 0;
-  width: 100%;
 }
 
 /* set font size for the p element in footer */
@@ -286,10 +287,13 @@ footer button {
   padding: 0.2rem;
 }
 
+.boxt checkbox {
+  width: 50px;
+  text-align: left;
+}
 /* I use the code want the class ".boxt .check" and ".boxt .agree" in same line, but not work */
 .boxt {
   display: inline;
-  flex-wrap: nowrap;
 }
 
 /* 4 Social Platform Icons */
@@ -386,17 +390,17 @@ footer button {
 
   /* Select the 1st list item */
   .hc .hours:nth-child(1) {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 
   /* Select the 2ed list item */
   .hc .hours:nth-child(2) {
-    flex-basis: 40%;
+    flex-basis: 25%;
   }
 
   /* Select the 3th list item */
   .hc .hours:nth-child(3) {
-    flex-basis: 37%;
+    flex-basis: 38%;
   }
 
   /* boxfooter container*/
@@ -406,7 +410,7 @@ footer button {
     /* Align the flex items at the center of the container */
     justify-content: center;
     align-items: center;
-    margin: 0.4rem 2rem 0rem 2rem;
+    /* margin: 0.4rem 2rem 0rem 2rem; */
   }
 
 }
@@ -423,7 +427,6 @@ footer button {
 
   /* container container */
   .main {
-    width: 100%;
     justify-content: center;
     /* start using the grid model */
     display: grid;
@@ -453,7 +456,7 @@ footer button {
   /* Select the 3th list item */
   .main .container:nth-child(3) {
     grid-column: 1 / span 4;
-    grid-row: 5 / span 1;
+    grid-row: 4 / span 1;
   }
 
   /* Select the 4th list item */
@@ -470,7 +473,6 @@ footer button {
 
   /* footerbox container */
   .footerbox {
-    width: 100%;
     /* start using the grid model */
     display: grid;
     /* define a pattern have 3 columns*/
