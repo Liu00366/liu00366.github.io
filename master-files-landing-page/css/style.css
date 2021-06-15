@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,34 +104,34 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /************************** css begining ****************************/
@@ -178,11 +178,13 @@ a {
   text-decoration: none;
   color: #FF8480;
 }
+
 /* Logo image layout in the page */
 .logo img {
   width: 28%;
   margin: 2% 5% 2% 5%;
 }
+
 /* Set font size in class .container .block p */
 .container .block p {
   /* 1.5rem = 24px */
@@ -198,6 +200,7 @@ h1 {
   /* thickness of the margin area: top, right, down, left */
   margin: 2% 5% 2% 5%;
 }
+
 /* h2 layout setting */
 h2 {
   /* 2.5rem = 40px */
@@ -205,6 +208,7 @@ h2 {
   /* no margin */
   margin: 0;
 }
+
 /* h3 layout setting */
 h3 {
   /* 1rem = 16px */
@@ -220,16 +224,18 @@ h4 {
 }
 
 /* class .container .block p element layout */
-.container .block p{
+.container .block p {
   /* thickness of the margin area: top, right, down, left */
   margin: 2% 5% 2% 5%;
 }
+
 /* class .container .block img element layout */
-.container .block img{
+.container .block img {
   margin: 2% 5% 2% 5%;
 }
+
 /* class .container .block .table-input layout */
-.container .block .table-input{
+.container .block .table-input {
   margin: 2% 5% 2% 5%;
   background: #FFFFFF;
   /* Defines the radii of the outer border edge. */
@@ -250,63 +256,83 @@ input {
   /* the value 8px applies to all four corners */
   border-radius: 8px;
   font: 1rem Montserrat-Regular;
+  /* Specifies the display behavior fot the element starts on a new line, and takes up the whole width */
   display: block;
+  /* setting no border here*/
   border: none;
+  /* the element, padding and border are included in the width and height */
   box-sizing: border-box;
+  /* left justifying */
   text-align: left;
   width: 100%;
 }
 
-/* set footer  */
+/* set layout of footer  */
 footer {
   background-color: #FFFD8C;
+  /* setting border width */
   border: 1.125rem;
   padding: 1rem;
+  /* thickness of the margin area: top, right, down, left */
   margin: 1rem 0 1rem 0;
   width: 100%;
 }
 
+/* set font size for the p element in footer */
 footer p {
   font: 1rem Montserrat-Regular;
 }
 
+/* Overide setting for element button */
 footer button {
   background-color: #FF8480;
   color: #F7F7FF;
   padding: 0.2rem;
 }
 
+/* I use the code want the class ".boxt .check" and ".boxt .agree" in same line, but not work */
 .boxt {
   display: inline;
+  flex-wrap: nowrap;
 }
 
+/* 4 Social Platform Icons */
 .boxfooter {
+  /* start using the Flexbox model */
   display: flex;
+  /* Items are evenly distributed in the line with equal space around them. */
   justify-content: space-around;
   margin: 0.5rem;
 }
 
+/* the form container in footer */
 .hc {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
+  /* start using the Flexbox model */
   display: flex;
+  /* flex items will wrap onto multiple lines, from top to bottom. */
   flex-wrap: wrap;
 }
 
+/* Select the 1st list item */
 .hc .hours:nth-child(1) {
   flex-basis: 28%;
 }
 
+/* Select the 2ed list item */
 .hc .hours:nth-child(2) {
   flex-basis: 67%;
 }
 
+/* Select the 3th list item */
 .hc .hours:nth-child(3) {
   flex-basis: 97%;
 }
 
 
 /* ********** Tablet View ********** */
+/* On screens that are 768px wide or larger, the layout will fllow the seeting below*/
 @media screen and (min-width: 768px) {
   h1 {
     /* 5rem = 80px */
@@ -329,44 +355,59 @@ footer button {
   }
 
   .drive {
+    /* 2rem = 32px */
     font-size: 2rem;
   }
 
   .already {
-    font-size: 1.1rem;
+    /* 1.125rem = 18px*/
+    font-size: 1.125rem;
   }
 
+  /* button in footer */
   footer button {
+    /* cancel padding and border */
     padding: 0;
     border: 0;
   }
 
+  /* input in footer */
   footer input {
+    /* edit padding and border */
     padding: 0.5rem;
     border: 0.5rem;
   }
 
+  /* hc container*/
   .hc {
     margin-left: 0.2rem;
     margin-right: 0.2rem;
+    /* start using the Flexbox model */
     display: flex;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
     flex-wrap: wrap;
   }
 
+  /* Select the 1st list item */
   .hc .hours:nth-child(1) {
     flex-basis: 20%;
   }
 
+  /* Select the 2ed list item */
   .hc .hours:nth-child(2) {
     flex-basis: 40%;
   }
 
+  /* Select the 3th list item */
   .hc .hours:nth-child(3) {
     flex-basis: 37%;
   }
 
+  /* boxfooter container*/
   .boxfooter {
+    /* start using the Flexbox model */
     display: flex;
+    /* Align the flex items at the center of the container */
     justify-content: center;
     align-items: center;
     margin: 0.4rem 2rem 0rem 2rem;
@@ -375,80 +416,127 @@ footer button {
 }
 
 /* ********** Desktop View ********** */
+/* On screens that are 1280px wide or larger, the layout will fllow the seeting below*/
 @media screen and (min-width: 1280px) {
 
-  html,
-  body {
-    background: #F7F7FF;
-    margin: 0% 3% 0% 3%;
-    border: 0;
-    display:inline-flex;
-    /* 1rem = 16px */
-    font-size: 1rem;
-    font-family: Montserrat-Regular;
-  }
-
+  /*  */
   .logo img {
     width: 100%;
     margin-top: 0;
   }
 
+  /* container container */
   .container {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows:repeat(4, 1fr);
+    width: 100%;
+    /* start using the grid model */
+    display: grid;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    flex-wrap: wrap;
+    /* define a pattern have 12 columns*/
+    grid-template-columns: repeat(12, 1fr);
+    /* define a pattern have 8 rows*/
+    grid-template-rows: repeat(5, 1fr);
+    margin: 2%;
   }
 
-  .container .block:nth-child(1){
+  /* Select the 1st list item */
+  .container .block:nth-child(1) {
+    /* Place a grid item at column line 1, and let it end on column line 2 */
     grid-column: 1/2;
+    /* Place a grid item at row line 1, and let it end on row line 2 */
     grid-row: 1/2;
-  } 
+  }
 
-  .container .block:nth-child(2){
+  /* Select the 2ed list item */
+  .container .block:nth-child(2) {
+    /* Place a grid item at column line 1, and let it end on column line 2 */
     grid-column: 1 / 2;
     grid-row: 2 /3;
   }
 
-  .container .block:nth-child(3){
+  /* Select the 3th list item */
+  .container .block:nth-child(3) {
     grid-column: 1 / 2;
     grid-row: 3 /4;
   }
 
-  .container .block:nth-child(4){
+  /* Select the 4th list item */
+  .container .block:nth-child(4) {
     grid-column: 2/ 3;
     grid-row: 2 / 4;
   }
-  .container .block:nth-child(5){
+
+  /* Select the 5th list item */
+  .container .block:nth-child(5) {
     grid-column: 3 /4;
     grid-row: 3 / 4;
   }
 
-
+  /* footerbox container */
   .footerbox {
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:repeat(3, 1fr);
+    width: 100%;
+    /* start using the grid model */
+    display: grid;
+    /* define a pattern have 3 columns*/
+    grid-template-columns: 40% 30% 20%;
+    /* define a pattern have 3 rows*/
+    grid-template-rows: repeat(3, 2rem);
+    margin: 2% 3% 0% 3%;
   }
 
-  .footerbox .box:nth-child(1){
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
+  /* Select the 1st list item */
+  .footerbox .box:nth-child(1) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 1, span 2 rows */
+    grid-row: 1 / span 2;
   }
 
-  .footerbox .box:nth-child(2){
-    grid-column: 1 / span 1;
+  /* Select the 2ed list item */
+  .footerbox .box:nth-child(2) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 2, span 2 rows */
+    grid-row: 2 / span 2;
+  }
+
+  /* Select the 3th list item */
+  .footerbox .box:nth-child(3) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 3, span 2 rows */
+    grid-row: 3 / span 2;
+  }
+
+  /* Select the 4th list item */
+  .footerbox .box:nth-child(4) {
+    /* Place a grid item at column 3, span 2 columns */
+    grid-column: 3 / span 1;
+    /* Place a grid item at row 2, span 1 rows */
     grid-row: 2 / span 1;
   }
 
-  .footerbox .box:nth-child(3){
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
+  /* hc container*/
+  .hc {
+    /* start using the Flexbox model */
+    display: flex;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    flex-wrap: wrap;
   }
 
-  .footerbox .box:nth-child(4){
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+  /* Select the 1st list item */
+  .hc .hours:nth-child(1) {
+    flex-basis: 15%;
   }
 
+  /* Select the 2ed list item */
+  .hc .hours:nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  /* Select the 3th list item */
+  .hc .hours:nth-child(3) {
+    flex-basis: 28%;
+  }
 
 }
