@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Machine readable information (metadata) -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,98 +12,131 @@
 </head>
 
 <body>
-  <header class="box header">
-
-    <div class="logo">
-      <img 
-      src="images/logo/logo.svg" 
-      alt="logo"
-      srcset="images/logo/logo.svg 320w,
-              images/logo/logo.svg 480w,
-              images/logo/logo.svg 720w,
-              images/logo/logo.svg 960w"
-      sizes="(min-width: 960px) 50vw, 100vw"
-      >
-    </div>
-
-    <div class="box main">
-      <h1>Want to be your own boss</h1>
-      <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-    </div>
-  </header>
-
-  <main>
-    <div class="box bgimage">
-      <img src="images/bg-image/scooter.svg" alt="bg-image">
-    </div>
-
-    <div class="box table">
-      <form class="table-input" action="apply.html" method="get">
-        <div class="boxt name">
-        <h2>Apply Now</h2>
+  <!-- main div container -->
+  <div class="container">
+    <!-- .container .block:nth-child(1) -->
+    <div class="container block">
+      <header>
+        <div class="logo">
+          <img src="images/logo/logo.png" alt="logo">
         </div>
-        <div class="boxt describe">
+      </header>
+    </div>
+    <main>
+      <!-- main content of the page -->
+      <!-- .container .block:nth-child(2) -->
+      <div class="container block">
+        <h1>Want to be your own boss?</h1>
+      </div>
+      <!-- .container .block:nth-child(3) -->
+      <div class="container block">
+        <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+      </div>
+
+      <!-- .container .block:nth-child(4) -->
+      <div class="container block">
+        <img src="images/bg-image/scooter.svg" alt="bg-image">
+      </div>
+    </main>
+
+    <!-- Registration Form -->
+    <!-- .container .block:nth-child(5) -->
+    <div class="container block">
+      <form class="table-input" action="apply.html" method="get">
+        <div class="name">
+          <h2>Apply Now</h2>
+        </div>
+        <div class="describe">
           <h3>Enter your info below</h3>
         </div>
-        <div class="boxt first-name">
+        <!-- input your first name, show the First name in the typed field -->
+        <div class="first-name">
           <label for="first-name"></label>
           <input type="text" id="first-name" name="first-name" placeholder="First name">
         </div>
-        <div class="boxt last-name">
+        <div class="last-name">
           <label for="last-name"></label>
           <input type="text" id="last-name" name="last-name" placeholder="Last name">
         </div>
-        <div class="boxt email">
-          <label for="email"></label>
-          <input type="email" id="email-add" name="email-add" placeholder="Email address">
-        </div>
-        <div class="boxt phone-no">
+        <div class="phone-no">
           <label for="phone-no"></label>
           <input type="number" id="phone-no" name="phone-no" placeholder="Phone number">
         </div>
-        <div class="boxt agree">
-          <input type="checkbox" name="agree" id="agree">
-          <label for="agree">I agree to dash terms</label>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Email address">
         </div>
-        <div class="boxt submit">
+        <div class="boxt">
+          <!-- checkbox to agree the term policy -->
+          <div class="boxt check">
+            <input type="checkbox" name="agree" id="agree">
+          </div>
+          <div class="boxt agree">
+            <label for="agree">I agree to dash terms</label>
+          </div>
+        </div>
+        <!-- Button for Submit the form -->
+        <div class="drive">
           <button type="submit">DRIVE WITH US</button>
         </div>
-        <div class="boxt p">
-          <p>Already applied?</p>
+        <!-- Go to link "aplication.html" -->
+        <div class="already">
+          <p>Already applied? <a href="aplication.html">Check your application status here</a></p>
         </div>
-        <div class="boxt application">
-          <a href="aplication.html">Check your application status here</a>
-        </div>
-      </form>        
+      </form>
     </div>
-  </main> 
-  
+  </div>
+
+  <!-- footer element -->
   <footer>
-    <h4>See how much you earn with Dash.</h4>
-    <p>how many hours do you want to drive with us this week?</p>
-    <form class="box contactform">
-        <div class="boxf hours">
-            <input type="text" id="input-hours" placeholder="Hours">
-        </div>
+    <div class="footerbox">
+      <!-- .footerbox .box:nth-child(1) -->
+      <div class="footerbox box">
+        <h4>See how much you earn with Dash.</h4>
+      </div>
+      <!-- .footerbox .box:nth-child(2) -->
+      <div class="footerbox box">
+        <p>how many hours do you want to drive with us this week?</p>
+      </div>
 
-        <div class="boxf city">
-            <input type="text" id="input-city" placeholder="City">
+      <!-- input box for hours and city -->
+      <!-- .footerbox .box:nth-child(3) -->
+      <div class="footerbox box">
+        <form class="contactform">
+          <div class="hc">
+            <div class="hc hours">
+              <input type="text" id="hours" placeholder="Hours">
+            </div>
+            <div class="hc hours">
+              <input type="text" id="city" placeholder="City">
+            </div>
+            <!-- Calculate button in the footer -->
+            <div class="hc hours">
+              <button type="button">CALCULATE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Icons for social Platform Connections -->
+      <!-- .footerbox .box:nth-child(4) -->
+      <div class="footerbox box">
+        <div class="boxfooter">
+          <div class="boxfooter icons">
+            <img src="images/icons/facebook.svg" alt="facebook" />
+          </div>
+          <div class="boxfooter icons">
+            <img src="images/icons/instagram.svg" alt="instaram" />
+          </div>
+          <div class="boxfooter icons">
+            <img src="images/icons/twitter.svg" alt="twitter" />
+          </div>
+          <div class="boxfooter icons">
+            <img src="images/icons/linkedin.svg" alt="linkedin" />
+          </div>
         </div>
-
-        <div class="boxf calculate">
-            <button type="calculate">CALCULATE</button>
-        </div>
-    </form>
-  
-    <div class="boxf icons">
-        <img src="images/icons/facebook.svg"/>
-        <img src="images/icons/instagram.svg"/>
-        <img src="images/icons/twitter.svg"/>
-        <img src="images/icons/linkedin.svg"/>
+      </div>
     </div>
-
-</footer>
-
+  </footer>
 </body>
 
 </html>

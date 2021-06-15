@@ -1,0 +1,454 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/************************** css begining ****************************/
+/* import locally font data */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+/* set the fount family and size for the web page*/
+html,
+body {
+  /* set full page background color */
+  background: #F7F7FF;
+  /* sit centrally within it's parent container */
+  margin: 0 auto;
+  border: 0;
+  /* font size 1rem = 16px */
+  font-size: 1rem;
+  /* set font family */
+  font-family: Montserrat-Regular;
+}
+
+/* Set the buttoms layout in the page */
+button {
+  /* 1.5rem = 24px */
+  font: 1.5rem Montserrat-Bold;
+  /* Defines the radii of the outer border edge. */
+  border-radius: 11px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #57EEAB;
+  padding: 0.5rem;
+}
+
+/* Set the href link layout in the page */
+a {
+  text-decoration: none;
+  color: #FF8480;
+}
+/* Logo image layout in the page */
+.logo img {
+  width: 28%;
+  margin: 2% 5% 2% 5%;
+}
+/* Set font size in class .container .block p */
+.container .block p {
+  /* 1.5rem = 24px */
+  font: 1.5em;
+}
+
+/* h1 layout setting */
+h1 {
+  /* Specifies the width of the h1 area */
+  width: 80%;
+  /* font size 3.75rem = 60px & font family */
+  font: 3.75rem Montserrat-Bold;
+  /* thickness of the margin area: top, right, down, left */
+  margin: 2% 5% 2% 5%;
+}
+/* h2 layout setting */
+h2 {
+  /* 2.5rem = 40px */
+  font: 2.5rem Montserrat-Bold;
+  /* no margin */
+  margin: 0;
+}
+/* h3 layout setting */
+h3 {
+  /* 1rem = 16px */
+  font: 1rem Montserrat-Regular;
+  /* thickness of the margin area: top, right, down, left */
+  margin: 0.3rem 0 0.3rem 0;
+}
+
+/* h4 layout setting */
+h4 {
+  /* font size 16px; fonnt family */
+  font: 1rem Montserrat-Bold;
+}
+
+/* class .container .block p element layout */
+.container .block p{
+  /* thickness of the margin area: top, right, down, left */
+  margin: 2% 5% 2% 5%;
+}
+/* class .container .block img element layout */
+.container .block img{
+  margin: 2% 5% 2% 5%;
+}
+/* class .container .block .table-input layout */
+.container .block .table-input{
+  margin: 2% 5% 2% 5%;
+  background: #FFFFFF;
+  /* Defines the radii of the outer border edge. */
+  /* the value 11px applies to all four corners */
+  border-radius: 11px;
+  /* Add shadows to the form area */
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 5px 10px 15px #333131;
+  padding: 1.5rem;
+}
+
+/* set layout for the typed field  */
+input {
+  background-color: #F4F4F5;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  /* Defines the radii of the outer border edge. */
+  /* the value 8px applies to all four corners */
+  border-radius: 8px;
+  font: 1rem Montserrat-Regular;
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  text-align: left;
+  width: 100%;
+}
+
+/* set footer  */
+footer {
+  background-color: #FFFD8C;
+  border: 1.125rem;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+
+footer p {
+  font: 1rem Montserrat-Regular;
+}
+
+footer button {
+  background-color: #FF8480;
+  color: #F7F7FF;
+  padding: 0.2rem;
+}
+
+.boxt {
+  display: inline;
+}
+
+.boxfooter {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.hc {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hc .hours:nth-child(1) {
+  flex-basis: 28%;
+}
+
+.hc .hours:nth-child(2) {
+  flex-basis: 67%;
+}
+
+.hc .hours:nth-child(3) {
+  flex-basis: 97%;
+}
+
+
+/* ********** Tablet View ********** */
+@media screen and (min-width: 768px) {
+  h1 {
+    /* 5rem = 80px */
+    font: 5rem Montserrat-Bold;
+  }
+
+  h3 {
+    /* 1.875rem = 30px */
+    font: 1.875rem;
+  }
+
+  input {
+    /* 1.125rem = 18px*/
+    font: 1.125rem;
+  }
+
+  .boxt .agree {
+    /* 1.25rem = 20px*/
+    font: 1.25rem;
+  }
+
+  .drive {
+    font-size: 2rem;
+  }
+
+  .already {
+    font-size: 1.1rem;
+  }
+
+  footer button {
+    padding: 0;
+    border: 0;
+  }
+
+  footer input {
+    padding: 0.5rem;
+    border: 0.5rem;
+  }
+
+  .hc {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hc .hours:nth-child(1) {
+    flex-basis: 20%;
+  }
+
+  .hc .hours:nth-child(2) {
+    flex-basis: 40%;
+  }
+
+  .hc .hours:nth-child(3) {
+    flex-basis: 37%;
+  }
+
+  .boxfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem 2rem 0rem 2rem;
+  }
+
+}
+
+/* ********** Desktop View ********** */
+@media screen and (min-width: 1280px) {
+
+  html,
+  body {
+    background: #F7F7FF;
+    margin: 0% 3% 0% 3%;
+    border: 0;
+    display:inline-flex;
+    /* 1rem = 16px */
+    font-size: 1rem;
+    font-family: Montserrat-Regular;
+  }
+
+  .logo img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .container {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+  }
+
+  .container .block:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+  } 
+
+  .container .block:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 /3;
+  }
+
+  .container .block:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 3 /4;
+  }
+
+  .container .block:nth-child(4){
+    grid-column: 2/ 3;
+    grid-row: 2 / 4;
+  }
+  .container .block:nth-child(5){
+    grid-column: 3 /4;
+    grid-row: 3 / 4;
+  }
+
+
+  .footerbox {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+  }
+
+  .footerbox .box:nth-child(1){
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .footerbox .box:nth-child(2){
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .footerbox .box:nth-child(3){
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .footerbox .box:nth-child(4){
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+
+}
