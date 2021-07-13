@@ -7,22 +7,22 @@
 body {
     font-family: 'Oswald', sans-serif;
     /* 16px */
-    font-size: 1rem; 
-    background-color: #FFF7ED; 
+    font-size: 1rem;
+    background-color: #FFF7ED;
 }
 
-/* Set header */
+/* Set for header */
 header {
     width: 100%;
 }
+
 .logo {
-    text-align:center;
+    text-align: center;
 }
-.logo img{
+
+.logo img {
     width: 15%;
-    box-sizing: border-box;
 }
-/* set container's background color and prosition except for the banner */
 
 /* nav attribute  */
 li {
@@ -37,71 +37,25 @@ a {
     text-decoration: none;
     font-size: 1.3rem;
 }
+
 a:hover {
     background-color: #EAA652;
     box-shadow: 0 0 2px 1px #EAA652;
 }
 
-.banner{
-    /* The image used */
-    background-image: url("../image/welcom-s.jpg");
-    background-repeat: no-repeat;
-    /* Center the image */
-    background-position: center; 
-    /* Resize the background image to cover the entire container */
-    background-size: cover; 
-    height:400px;
-}
-.banner h1{
-    text-align: center;
-}
-.banner p{
-    text-align: center;
-}
-.banner .btn{
-    text-align: center;
-    border-radius: 0.8rem;
-    font-size: 3rem;
-}
-
-/* Set the animation trajectory */
-@keyframes grow{
-    from { transform: none; }
-    /* go to bigger */
-    to { transform: scale(2); 
-    }
-  }
-
-/* the button-"Order Now" use the grow animation */
-.banner .btn{
-  animation-name: grow;
-  /*2s an animation cycle. */
-  animation-duration: 2s;
-  /* Infinite animation cycle*/
-  animation-iteration-count: infinite;
-}
-.box{
+/* set for footer */
+footer {
     background-color: lightgray;
-    margin: 7px 0 7px 0;
 }
 
-.product img{
-    width: 40%;
-    margin:8px 30% 0 30%;
-    text-align: center;
+.box .icon {
+    /* start using the Flexbox model */
+    display: inline-flex;
+    align-items: center;
 }
 
-.product .cart{
-    margin: 0;
-    width: 40px;
-}
 
-.icon{
-  /* start using the Flexbox model */
-  display: flex;
-  align-items: center;
-}
-.icon img{
+.icon img {
     width: 3rem;
 }
 
@@ -109,24 +63,225 @@ a:hover {
     font-size: 0.7rem;
 }
 
-.copyright a{
+.copyright a {
     font-size: 0.7rem;
 }
 
+/* seeting for Home page */
+.banner {
+    /* The image used */
+    background-image: url("../image/welcom-s.jpg");
+    background-repeat: no-repeat;
+    /* Center the image */
+    background-position: center;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+    height: 350px;
+}
 
+.banner h1 {
+    text-align: center;
+}
+
+.banner p {
+    text-align: center;
+}
+
+.banner .btn {
+    text-align: center;
+    border-radius: 0.8rem;
+    font-size: 3rem;
+}
+
+/* Set the animation trajectory */
+@keyframes grow {
+    from {
+        transform: none;
+    }
+
+    /* go to bigger */
+    to {
+        transform: scale(2);
+    }
+}
+
+/* the button-"Order Now" use the grow animation */
+.banner .btn {
+    animation-name: grow;
+    /*2s an animation cycle. */
+    animation-duration: 2s;
+    /* Infinite animation cycle*/
+    animation-iteration-count: infinite;
+}
+
+.box {
+    background-color: lightgray;
+    margin: 7px 0 7px 0;
+}
+
+.product img {
+    width: 40%;
+    margin: 8px 30% 0 30%;
+    text-align: center;
+}
+
+.product .cart {
+    margin: 0;
+    width: 40px;
+}
 
 
 /****************** Tablet **********************/
 
-/* Set the flat screen size of tablet */
-@media only screen and (min-width: 768px) {
+/* Set the screen size of tablet */
+@media only screen and (min-width: 760px) {
+
+    .head {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+    }
+
+    li {
+        display: inline;
+        margin-right: 2.2rem;
+        text-align: left;
+    }
+
+    .logo img {
+        width: 18%;
+        box-sizing: border-box;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 2.5rem;
+    }
+
+    /* Each row displays two items */
+    .product {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(2, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footerbox {
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(9, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox .box:nth-child(1) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(2) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(3) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
+
+    .footerbox .box:nth-child(4) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
 
 }
 
 /****************** Desktop **********************/
 
-/* Set the flat screen size of Desktop */
-    @media only screen and (min-width: 1280px) {
+/* Set the screen size of Desktop */
+@media only screen and (min-width: 1280px) {
+
+    /* Each row displays 3 items */
+    .product {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 3 columns*/
+        grid-template-columns: repeat(3, 1fr);
+        /* define a pattern have 2 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox {
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(12, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox .box:nth-child(1) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(2) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(3) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 10/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(4) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
+
+}
+
+
 
 
 }
