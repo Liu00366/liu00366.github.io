@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***************************** css begining *****************************/
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	background-color: #aad4cf;
+}
+
+body {
+	font-size: 1.3rem;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+	padding: 0;
+	background-color: cadetblue;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	font-size: 3rem;
+	color:white;
+	text-align: center;
+	background: url("../image/lone-starfish-wide.jpg") center no-repeat;
+	background-size: cover;
+	margin: 0px;
+	padding: 20% 10% 10% 10%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.hsc ul li {
+	display: inline-block;
+	width: 31%;
+	padding: 1% 12% 1% 12%;
+	box-sizing: border-box;
+	border-right: black solid 2px;
+}
+
+.hsc ul li:last-child {
+	border-right: 0em;
+}
+
+p {
+	font: 1.2rem;
+	padding: 0.5rem 1rem 1rem 0.5rem;
+}
+
+h2,
+h3,
+h4 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	font: bold;
+	padding-left: 0.3rem;
+	margin: 1rem;
+}
+
+.squire {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 1% 1% 0% 1%;
+	padding: 0.5rem;
+}
+
+.second ul li {
+	font-size: 1.2rem;
+	list-style: disc;
+	margin: 0 0 0 5%;
+	width: 90%;
+}
+
+.form {
+	border-style: solid;
+	border-width: 1px 2px 1px 1px;
+	/* border-color: black; */
+	padding: 0.8rem;
+	margin: 1rem;
+}
+
+h5 {
+	padding: 0.5em 0.5em 0.8rem 0rem;
+}
+
+/* .form input {
+	width: 98.5%;
+} */
+.name, .email{
+	width: 98.6%;
+	margin: 0.2em 0.5em 0.3em 0rem;
+}
+.message {
+	width: 98.6%;
+	height: 80px;
+	margin: 0.2em 0.5em 0.3em 0rem;
+}
+
+button {
+	margin: 1rem 1rem 1rem 0rem;
+	padding: 0.5em;
+	text-align: center;
+}
+
+footer {
+	text-align: right;
+	font: 1em sans-serif;
+	margin-right: 1em;
+}

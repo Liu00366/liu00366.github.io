@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***************************** css begining *****************************/
+/* set the fount family and size for the web page*/
+html {
+    /* set font family */
+    font-family: 'Open Sans', sans-serif;
+    /* set font size */
+    font-size: 0.6rem;
+}
+
+/* Overide #nav in base.css. changed   */
+body #nav {
+    /* Change the width to full screen. Defines the width as a percentage of the containing block's width*/
+    width: 100%;
+    /* generate space around elements, which inside of the borders. 
+        Change padding width which will according to rem settings*/
+    padding: 0.5rem;
+    /* no border */
+    border: 0;
+    /* chage background color for navigation erea */
+    background-color: #DD6E42;
+}
+
+/* Overide .nav .nav-link in base.css. changed   */
+body .nav .nav-link {
+    /* change the text color */
+    color: snow;
+    /* Change padding width which will according to rem settings*/
+    padding: 0.5rem;
+    /* Change the width to full screen */
+    width: 100%;
+}
+
+/* set the style when mouse hover on the navegation tag */
+body .nav a:hover {
+    /* the tag's background color*/
+    background-color: #E8DAB2;
+    /* the text color*/
+    color: #222;
+}
+
+/* Overide #home in base.css. changed style for Home section */
+#main .home {
+    /* set font family */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    /* text align left */
+    text-align: left;
+    /* Change home section padding weight which will according to rem settings*/
+    padding: 1rem;
+    /* chage background color for Home section */
+    background-color: #4F6D7A;
+    /* change the text color*/
+    color: snow;
+
+}
+
+/* Overide .page-title, .section-title in base.css. changed style for title elements */
+section .page-title,
+section .section-title {
+    /* Add margin which create space around elements, outside of borders*/
+    margin: 0.3rem;
+}
+
+/* Overide #about in base.css. changed style for AboutMe section */
+.main #about {
+    /* Change home section padding weight which according to rem settings*/
+    padding: 2rem;
+    /* chage background color for AboutMe section */
+    background-color: #B56576;
+}
+
+/* Overide .about in base.css. changed style for About Me section */
+.main .about {
+    /* set font family */
+    font-family: 'Open Sans', sans-serif;
+    /* change the text color*/
+    color: snow;
+}
+
+/* Overide .about-image in base.css. changed style for the image show in about section */
+.about .about-image {
+    /* Set the image size to 20% of the screen. Defines the width as a percentage of the containing block's width */
+    width: 20%;
+}
+
+/* Overide #contact in base.css. changed style for Contact Me section */
+#main .contact {
+    /* set the horizontal alignment center of the screen */
+    text-align: center;
+    /* set font family */
+    font-family: 'Open Sans', sans-serif;
+    /* chage background color for Contact Me section */
+    background-color: #708d81;
+    /* text color */
+    color: snow;
+    /* Change home section padding weight which will according to rem settings*/
+    padding: 1.5rem;
+    /* taxt size */
+    font-size: 1.75rem;
+}
+
+/* Overide .contact-form in base.css. changed style for the form */
+.contact .contact-form {
+    /* chage background color for the form */
+    background-color: #E8DAB2;
+    /* text color */
+    color: #222;
+    /* Add margin which create space around elements, outside of borders*/
+    margin: 0.5rem;
+    /* Change form padding weight which will according to rem settings*/
+    padding: 0.6rem;
+    /* Set the size to 95% of the Contact Me section. Defines the width as a percentage of the containing block's width */
+    width: 95%;
+}
+
+
+/* Overide .contact-form-input in base.css. changed style for the form */
+.contact-form-section .contact-form-input {
+    /* Change form padding weight which will according to rem settings*/
+    padding: 0.5rem;
+    /* Set the input area size to 95% of the form. Defines the width as a percentage of the containing block's width */
+    width: 95%;
+    /* text align center of the section */
+    text-align: center;
+}
+
+/* set footer style*/
+footer {
+    /* text align right */
+    text-align: right;
+    /* width 90% of screen */
+    width: 90%;
+}
+
+/* ********** Desktop View ********** */
+/*  use the setting as below when the page width over 560px */
+@media screen and (min-width: 560px) {
+    html {
+        /* change font size for the whole page*/
+        font-size: 1rem;
+    }
+}

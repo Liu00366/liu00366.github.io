@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************************** css begining ****************************/
+/* import locally font data */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* set the fount family and size for the web page*/
+html,
+body {
+  /* set full page background color */
+  background: #F7F7FF;
+  /* sit centrally within it's parent container */
+  margin: 0 auto;
+  border: 0;
+  /* font size 1rem = 16px */
+  font-size: 1rem;
+  /* set font family */
+  font-family: Montserrat-Regular;
+}
+
+/* Set the buttoms layout in the page */
+button {
+  /* 1.5rem = 24px */
+  font: 1.5rem Montserrat-Bold;
+  /* Defines the radii of the outer border edge. */
+  border-radius: 11px;
+  text-align: center;
+  border: none;
+  background-color: #57EEAB;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* Set the href link layout in the page */
+a {
+  text-decoration: none;
+  color: #FF8480;
+}
+
+/* Logo image layout in the page */
+.logo img {
+  width: 28%;
+  margin: 2% 5% 2% 5%;
+}
+
+/* h1 layout setting */
+h1 {
+  /* Specifies the width of the h1 area */
+  width: 80%;
+  /* font size 3.75rem = 60px & font family */
+  font: 3.75rem Montserrat-Bold;
+  /* thickness of the margin area: top, right, down, left */
+  margin: 2% 5% 2% 5%;
+}
+
+/* h2 layout setting */
+h2 {
+  /* 2.5rem = 40px */
+  font: 2.5rem Montserrat-Bold;
+  /* no margin */
+  margin: 0;
+}
+
+/* h3 layout setting */
+h3 {
+  /* 1rem = 16px */
+  font: 1rem Montserrat-Regular;
+  /* thickness of the margin area: top, right, down, left */
+  margin: 0.3rem 0 0.3rem 0;
+}
+
+/* h4 layout setting */
+h4 {
+  /* font size 16px; fonnt family */
+  font: 1rem Montserrat-Bold;
+}
+
+/* class .container .block p element layout */
+.container p {
+  /* thickness of the margin area: top, right, down, left */
+  margin: 2% 5% 2% 5%;
+  /* 1.5rem = 24px */
+  font: 1.5em;
+}
+
+/* class .container .block img element layout */
+.container img {
+  margin: 2% 5% 2% 5%;
+}
+
+/* class .container .block .table-input layout */
+.container .table-input {
+  margin: 2% 5% 2% 5%;
+  background: #FFFFFF;
+  /* Defines the radii of the outer border edge. */
+  /* the value 11px applies to all four corners */
+  border-radius: 11px;
+  /* Add shadows to the form area */
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 5px 10px 15px #333131;
+  padding: 1.5rem;
+}
+
+/* set layout for the typed field  */
+input {
+  background-color: #F4F4F5;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  /* Defines the radii of the outer border edge. */
+  /* the value 8px applies to all four corners */
+  border-radius: 8px;
+  font: 1rem Montserrat-Regular;
+  /* Specifies the display behavior fot the element starts on a new line, and takes up the whole width */
+  display: block;
+  /* setting no border here*/
+  border: none;
+  /* the element, padding and border are included in the width and height */
+  box-sizing: border-box;
+  /* left justifying */
+  text-align: left;
+  width: 100%;
+}
+
+/* set layout of footer  */
+footer {
+  background-color: #FFFD8C;
+  /* setting border width */
+  border: 0rem;
+  padding: 1.5rem 5%;
+}
+
+/* set font size for the p element in footer */
+footer p {
+  font: 1rem Montserrat-Regular;
+}
+
+/* Overide setting for element button */
+footer button {
+  background-color: #FF8480;
+  color: #F7F7FF;
+  padding: 0.2rem;
+}
+
+/* chackbox and "I agree to dash terms" inline  */
+.checkbox {
+  display: inline;
+  width: fit-content;
+  float: left;
+  margin: 0.3rem 0.3rem 0.7rem 0.2rem;
+}
+
+.agreebox {
+  margin: 1.5rem 1rem 1.5rem 0.2rem;
+}
+
+/* 4 Social Platform Icons */
+.boxfooter {
+  /* start using the Flexbox model */
+  display: flex;
+  /* Items are evenly distributed in the line with equal space around them. */
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+/* the form container in footer */
+.hc {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  /* start using the Flexbox model */
+  display: flex;
+  /* flex items will wrap onto multiple lines, from top to bottom. */
+  flex-wrap: wrap;
+}
+
+/* Select the 1st list item */
+.hc .hours:nth-child(1) {
+  flex-basis: 28%;
+}
+
+/* Select the 2ed list item */
+.hc .hours:nth-child(2) {
+  flex-basis: 67%;
+}
+
+/* Select the 3th list item */
+.hc .hours:nth-child(3) {
+  flex-basis: 97%;
+}
+
+
+/* ********** Tablet View ********** */
+/* On screens that are 768px wide or larger, the layout will fllow the seeting below*/
+@media screen and (min-width: 768px) {
+  h1 {
+    /* 5rem = 80px */
+    font: 5rem Montserrat-Bold;
+  }
+
+  h3 {
+    /* 1.875rem = 30px */
+    font: 1.875rem;
+  }
+
+  input {
+    /* 1.125rem = 18px*/
+    font: 1.125rem;
+  }
+
+  .boxt .agree {
+    /* 1.25rem = 20px*/
+    font: 1.25rem;
+  }
+
+  .drive {
+    /* 2rem = 32px */
+    font-size: 2rem;
+  }
+
+  .already {
+    /* 1.125rem = 18px*/
+    font-size: 1.125rem;
+  }
+
+  /* button in footer */
+  footer button {
+    /* cancel border */
+    border: 0;
+  }
+
+  /* input in footer */
+  footer input {}
+
+  /* hc container*/
+  .hc {
+    /* start using the Flexbox model */
+    display: flex;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    flex-wrap: wrap;
+  }
+
+  /* Select the 1st list item */
+  .hc .hours:nth-child(1) {
+    flex-basis: 25%;
+  }
+
+  /* Select the 2ed list item */
+  .hc .hours:nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  /* Select the 3th list item */
+  .hc .hours:nth-child(3) {
+    flex-basis: 38%;
+  }
+
+  /* boxfooter container*/
+  .boxfooter {
+    /* start using the Flexbox model */
+    display: flex;
+    /* Align the flex items at the center of the container */
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.4rem 2rem 0rem 2rem; */
+  }
+
+}
+
+/* ********** Desktop View ********** */
+/* On screens that are 1280px wide or larger, the layout will fllow the seeting below*/
+@media screen and (min-width: 1280px) {
+
+  /*  */
+  .logo img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* container container */
+  .main {
+    justify-content: center;
+    /* start using the grid model */
+    display: grid;
+    /* define a pattern have 10 columns*/
+    grid-template-columns: repeat(10, 1fr);
+    /* define a pattern have 5 rows*/
+    grid-template-rows: repeat(5, 1fr);
+    margin: 2%;
+  }
+
+  /* Select the 1st list item */
+  .main .container:nth-child(1) {
+    /* Place a grid item at column 1, and span 1 column */
+    grid-column: 1/ span 1;
+    /* Place a grid item at row 1, and span 1 row */
+    grid-row: 1 /span 1;
+  }
+
+  /* Select the 2ed list item */
+  .main .container:nth-child(2) {
+    /* Place a grid item at column 1, and span 4 columns */
+    grid-column: 1 / span 5;
+    /* Place a grid item at row 2, and span 3 row */
+    grid-row: 2 / span 2;
+  }
+
+  /* Select the 3th list item */
+  .main .container:nth-child(3) {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+
+  /* Select the 4th list item */
+  .main .container:nth-child(4) {
+    grid-column: 4/ span 5;
+    grid-row: 2 / span 4;
+  }
+
+  /* Select the 5th list item */
+  .main .container:nth-child(5) {
+    grid-column: 8 / span 3;
+    grid-row: 2 / span 4;
+  }
+
+  /* footerbox container */
+  .footerbox {
+    /* start using the grid model */
+    display: grid;
+    /* define a pattern have 3 columns*/
+    grid-template-columns: 40% 30% 20%;
+    /* define a pattern have 3 rows*/
+    grid-template-rows: repeat(3, 2rem);
+  }
+
+  /* Select the 1st list item */
+  .footerbox .box:nth-child(1) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 1, span 2 rows */
+    grid-row: 1 / span 2;
+  }
+
+  /* Select the 2ed list item */
+  .footerbox .box:nth-child(2) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 2, span 2 rows */
+    grid-row: 2 / span 2;
+  }
+
+  /* Select the 3th list item */
+  .footerbox .box:nth-child(3) {
+    /* Place a grid item at column 1, span 2 columns */
+    grid-column: 1 / span 2;
+    /* Place a grid item at row 3, span 2 rows */
+    grid-row: 3 / span 2;
+  }
+
+  /* Select the 4th list item */
+  .footerbox .box:nth-child(4) {
+    /* Place a grid item at column 3, span 2 columns */
+    grid-column: 3 / span 1;
+    /* Place a grid item at row 2, span 1 rows */
+    grid-row: 2 / span 1;
+  }
+
+  /* hc container*/
+  .hc {
+    /* start using the Flexbox model */
+    display: flex;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    flex-wrap: wrap;
+  }
+
+  /* Select the 1st list item */
+  .hc .hours:nth-child(1) {
+    flex-basis: 15%;
+  }
+
+  /* Select the 2ed list item */
+  .hc .hours:nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  /* Select the 3th list item */
+  .hc .hours:nth-child(3) {
+    flex-basis: 28%;
+  }
+
+  /* add margin for social platform icons */
+  .boxfooter {
+    margin: 1.5rem;
+  }
+
+}
