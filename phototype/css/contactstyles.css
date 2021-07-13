@@ -1,0 +1,56 @@
+.contact-form {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    width: 10090;
+}
+
+.form-section input,
+.form-section textarea {
+    background-color: aliceblue;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.form-section textarea {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+
+/****************** Tablet **********************/
+
+/* Set the screen size of tablet */
+@media only screen and (min-width: 760px) {
+    .table {
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(2, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .table .box:nth-child(1) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 1/ span 1;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .table .box:nth-child(2) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 2/ span 1;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+}
+
+/****************** Desktop **********************/
+
+/* Set the screen size of Desktop */
+@media only screen and (min-width: 1280px) {}
