@@ -1,21 +1,119 @@
-/* Keep the size of all boxes unaffected by the padding*/
+/* all element size will inculed border and padding in the values */
 * {
     box-sizing: border-box;
 }
 
-/* Set all font - all parts that have not been reset */
+/* Set all font in body */
 body {
-    font-family: 'Oswald', sans-serif;/*16px */
-    font-size: 1rem;
-    
+    font-family: 'Oswald', sans-serif;
+    /* 16px */
+    font-size: 1rem; 
+    background-color: #FFF7ED; 
 }
 
-/* Sets the color, size of the header */
+/* Set header */
 header {
-    background-color: #FFFFFF;
     width: 100%;
-    height: auto;
 }
+.logo {
+    text-align:center;
+}
+.logo img{
+    width: 15%;
+    box-sizing: border-box;
+}
+/* set container's background color and prosition except for the banner */
+
+/* nav attribute  */
+li {
+    /*Remove list style*/
+    list-style: none;
+    /* text in the center */
+    text-align: center;
+}
+
+a {
+    /* remove the underline */
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+a:hover {
+    background-color: #EAA652;
+    box-shadow: 0 0 2px 1px #EAA652;
+}
+
+.banner{
+    /* The image used */
+    background-image: url("../image/welcom-s.jpg");
+    background-repeat: no-repeat;
+    /* Center the image */
+    background-position: center; 
+    /* Resize the background image to cover the entire container */
+    background-size: cover; 
+    height:400px;
+}
+.banner h1{
+    text-align: center;
+}
+.banner p{
+    text-align: center;
+}
+.banner .btn{
+    text-align: center;
+    border-radius: 0.8rem;
+    font-size: 3rem;
+}
+
+/* Set the animation trajectory */
+@keyframes grow{
+    from { transform: none; }
+    /* go to bigger */
+    to { transform: scale(2); 
+    }
+  }
+
+/* the button-"Order Now" use the grow animation */
+.banner .btn{
+  animation-name: grow;
+  /*2s an animation cycle. */
+  animation-duration: 2s;
+  /* Infinite animation cycle*/
+  animation-iteration-count: infinite;
+}
+.box{
+    background-color: lightgray;
+    margin: 7px 0 7px 0;
+}
+
+.product img{
+    width: 40%;
+    margin:8px 30% 0 30%;
+    text-align: center;
+}
+
+.product .cart{
+    margin: 0;
+    width: 40px;
+}
+
+.icon{
+  /* start using the Flexbox model */
+  display: flex;
+  align-items: center;
+}
+.icon img{
+    width: 3rem;
+}
+
+.copyright {
+    font-size: 0.7rem;
+}
+
+.copyright a{
+    font-size: 0.7rem;
+}
+
+
 
 
 /****************** Tablet **********************/
