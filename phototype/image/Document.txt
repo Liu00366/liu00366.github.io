@@ -3,3 +3,13 @@
 粉色 DF7288
 绿色 37634B
 深红 4D1A18
+
+.icon .block:nth-child(1) {
+    flex-basis: 28%;
+  }
+  .icon .block:nth-child(2) {
+    flex-basis: 28%;
+  }
+  .icon .block:nth-child(3) {
+    flex-basis: 28%;
+  }
