@@ -1,29 +1,241 @@
+/* all element size will inculed border and padding in the values */
+* {
+    box-sizing: border-box;
+}
+/* Set all font in body */
 body {
-    size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    /* 16px */
+    font-size: 1rem;
+    background-color: #CCC5B9;
 }
 
+/* seeting for Home page */
 .banner {
     background-color: #111;
-    font-family: "Montserrat";
-    text-align: center;
-    color: #FFF;
+    font-family: "Oswald";
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 10rem;
+    height: 9rem;
     letter-spacing: 1px;
 }
 
 h1 {
     background-clip: border-box;
+    /* The image used */
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    /* Resize the background image to cover the entire container */
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 3rem;
+}
+
+/* website logo */
+.navbar-brand img {
+    width: 20%;
+}
+
+a {
+    /* remove the underline */
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    background-color: #EB5E28;
+    box-shadow: 0 0 2px 1px #EB5E28;
+}
+
+/* set for footer */
+footer {
+    background-color: CCC5B9;
+}
+
+.box .icon {
+    /* start using the Flexbox model */
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 3rem;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+
+
+.box {
+    background-color: #CCC5B9;
+    margin: 7px 0 7px 0;
+}
+
+.product img {
+    width: 40%;
+    margin: 8px 30% 0 30%;
+    text-align: center;
+}
+
+.product .cart {
+    margin: 0;
+    width: 40px;
+}
+
+
+/****************** Tablet **********************/
+
+/* Set the screen size of tablet */
+@media only screen and (min-width: 760px) {
+
+    .head {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+    }
+
+    li {
+        display: inline;
+        margin-right: 2.2rem;
+        text-align: left;
+    }
+
+    .logo img {
+        width: 18%;
+        box-sizing: border-box;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 2.5rem;
+    }
+
+    /* Each row displays two items */
+    .product {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(2, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footerbox {
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(9, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox .box:nth-child(1) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(2) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(3) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
+
+    .footerbox .box:nth-child(4) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
+
+}
+
+/****************** Desktop **********************/
+
+/* Set the screen size of Desktop */
+@media only screen and (min-width: 1280px) {
+
+    /* Each row displays 3 items */
+    .product {
+        /* start using the Flexbox model */
+        display: flex;
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 3 columns*/
+        grid-template-columns: repeat(3, 1fr);
+        /* define a pattern have 2 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox {
+        /* flex items will wrap onto multiple lines, from top to bottom. */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* start using the grid model */
+        display: grid;
+        /* define a pattern have 2 columns*/
+        grid-template-columns: repeat(12, 1fr);
+        /* define a pattern have 3 rows*/
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footerbox .box:nth-child(1) {
+        /* Place a grid item at column 1, and span 4 column */
+        grid-column: 1/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(2) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(3) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 10/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 1 /span 1;
+    }
+
+    .footerbox .box:nth-child(4) {
+        /* Place a grid item at column 1, and span 1 column */
+        grid-column: 6/ span 4;
+        /* Place a grid item at row 1, and span 1 row */
+        grid-row: 2 /span 1;
+    }
 
 }

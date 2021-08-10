@@ -67,53 +67,6 @@ footer {
     font-size: 0.7rem;
 }
 
-/* seeting for Home page */
-.banner {
-    /* The image used */
-    background-image: url("../image/welcom-s.jpg");
-    background-repeat: no-repeat;
-    /* Center the image */
-    background-position: center;
-    /* Resize the background image to cover the entire container */
-    background-size: cover;
-    height: 350px;
-}
-
-.banner h1 {
-    text-align: center;
-}
-
-.banner p {
-    text-align: center;
-}
-
-.banner .btn {
-    text-align: center;
-    border-radius: 0.8rem;
-    font-size: 3rem;
-}
-
-/* Set the animation trajectory */
-@keyframes grow {
-    from {
-        transform: none;
-    }
-
-    /* go to bigger */
-    to {
-        transform: scale(2);
-    }
-}
-
-/* the button-"Order Now" use the grow animation */
-.banner .btn {
-    animation-name: grow;
-    /*2s an animation cycle. */
-    animation-duration: 2s;
-    /* Infinite animation cycle*/
-    animation-iteration-count: infinite;
-}
-
 .box {
     background-color: lightgray;
     margin: 7px 0 7px 0;
