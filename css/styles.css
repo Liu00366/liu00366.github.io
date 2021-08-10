@@ -1,4 +1,6 @@
-body {}
+body {
+    size: 1rem;
+}
 
 .banner {
     background-color: #111;
