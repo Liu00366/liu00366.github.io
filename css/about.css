@@ -76,24 +76,18 @@ li b {
         display: grid;
         /* define a pattern have 2 columns*/
         grid-template-columns: repeat(5, 1fr);
-        /* define a pattern have 2 rows*/
-        /* grid-template-rows: repeat(2, 1fr); */
     }
 
     .self:nth-child(1) {
         /* padding: 1.5rem 0 0 1rem; */
         /* Place a grid item at column 1, and span 4 column */
         grid-column: 1/ span 3;
-        /* Place a grid item at row 1, and span 1 row */
-        /* grid-row: 1 /span 1; */
     }
 
     .self:nth-child(2) {
         /* padding: 1.5rem 0 0 1rem; */
         /* Place a grid item at column 1, and span 4 column */
         grid-column: 4/ span 2;
-        /* Place a grid item at row 1, and span 1 row */
-        /* grid-row: 1 /span 1; */
     }
 }
 

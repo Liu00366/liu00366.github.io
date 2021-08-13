@@ -131,30 +131,22 @@ h4 {
         display: grid;
         /* define a pattern have 2 columns*/
         grid-template-columns: repeat(9, 1fr);
-        /* define a pattern have 2 rows*/
-        /* grid-template-rows: repeat(2, 1fr); */
     }
 
     .footerbox .boxf:nth-child(1) {
         /* padding: 1.5rem 0 0 1rem; */
         /* Place a grid item at column 1, and span 4 column */
         grid-column: 1/ span 4;
-        /* Place a grid item at row 1, and span 1 row */
-        /* grid-row: 1 /span 1; */
     }
 
     .footerbox .boxf:nth-child(2) {
         /* Place a grid item at column 1, and span 1 column */
         grid-column: 7/ span 3;
-        /* Place a grid item at row 1, and span 1 row */
-        /* grid-row: 1 /span 1; */
     }
 
     .footerbox .boxf:nth-child(3) {
         /* Place a grid item at column 1, and span 1 column */
         grid-column: 1/ span 4;
-        /* Place a grid item at row 1, and span 1 row */
-        /* grid-row: 2 /span 1; */
     }
 
     .contact {
