@@ -12,8 +12,8 @@ The biggest challenges I faced was the manage of borders, paddings, and margins.
 
 ## Reference:
 * background-image <u>https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif</u>
-* twitter icon <u>https://img.icons8.com/fluent/96/000000/twitter.png</u>
-* instagram icon <u>https://img.icons8.com/color/90/000000/instagram-new--v1.png</u>
-* facebook icon <u>https://img.icons8.com/color/96/000000/facebook.png</u>
+* twitter icon <u>https://icons8.com/icon/13963/twitter</u>
+* instagram icon <u>https://icons8.com/icon/32323/instagram-logo</u>
+* facebook icon <u>https://icons8.com/icon/13912/facebook</u>
 * Bootstrap navbar <u>https://getbootstrap.com/docs/5.1/components/navbar/</u>
 * Button style <u>https://codepen.io/Palaklive/pen/PJbzEB</u>
