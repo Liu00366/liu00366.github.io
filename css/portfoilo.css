@@ -24,6 +24,7 @@ h1 {
     font-size: 1.8rem;
     line-height: 3rem;
 }
+
 /* End banner setting */
 
 /* Product setting */
@@ -38,8 +39,9 @@ h1 {
     background-color: #ccc5b9;
     /* margin: 8px 0 8px 0; */
     border: 0.3rem solid #252422;
-    padding:  1rem ;
+    padding: 1rem;
 }
+
 /* Product setting end */
 
 /****************** Tablet **********************/
@@ -72,6 +74,7 @@ h1 {
 /****************** Desktop **********************/
 /* Set the screen size of tablet */
 @media only screen and (min-width: 1280px) {
+
     /* Each row displays 3 items */
     .product {
         /* start using the Flexbox model */
